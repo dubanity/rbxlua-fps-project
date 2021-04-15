@@ -6,7 +6,7 @@ Mainly used for learning the [API Reference](https://developer.roblox.com/en-us/
 The ClientHandler contains an interesting anti-exploitation feature that I will explain
 due to the source of it abiding by the well-known philosophy *security by obscurity*.
 
-Entering the game normally invokes no real sense of security due to my not focusing enough on the physics
+Entering the game normally evokes no real sense of security due to my not focusing enough on the physics
 aspects of the game. The real treasure resides in a special place only accessible to exploiters.
 
 Finding yourself a good exploit that supports newcclosure() and getnamecallmethod() should be enough to follow along. I recommend [Synapse X](https://x.synapse.to/) and will be using this to demonstrate the anti-exploit.
