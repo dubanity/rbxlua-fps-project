@@ -20,10 +20,10 @@ local RunService            = game:FindService('RunService')
 local HttpService           = game:FindService('HttpService')
 local ContentProvider       = game:FindService('ContentProvider')
 local StarterGui            = game:FindService('StarterGui')
-local StarterPlayer	        = game:FindService('StarterPlayer')
+local StarterPlayer         = game:FindService('StarterPlayer')
 local ReplicatedStorage     = game:FindService('ReplicatedStorage')
 local ReplicatedFirst       = game:FindService('ReplicatedFirst')
-local ContextActionService 	= game:FindService('ContextActionService')
+local ContextActionService  = game:FindService('ContextActionService')
 local AssetService          = game:FindService('AssetService')
 local InsertService         = game:FindService('InsertService')
 local CollectionService     = game:FindService('CollectionService')
@@ -79,9 +79,9 @@ local CoreSettings = {
         ["GuiService"] 	        = game:FindService('GuiService'),
         ["TestService"]         = game:FindService('TestService'),
         ["ScriptContext"]       = game:FindService('ScriptContext'),
-        ["ABTest"] 	            = game:FindService('ABTestService'),
+        ["ABTest"]              = game:FindService('ABTestService'),
         ["Messaging"]           = game:FindService('MessagingService'),
-        --["Studio"] 				= game:FindService('StudioService'), --> Debugging
+        ["Studio"]              = game:FindService('StudioService'), --> Debugging
         ["Log"]                 = game:FindService('LogService'),
         ["Notification"]        = game:FindService('NotificationService'),
         ["Selection"]           = game:FindService('Selection'),
@@ -89,7 +89,7 @@ local CoreSettings = {
     },
     ["Misc"] = {
         ["UserSettings"]    = UserSettings,
-        ["GlobalSettings"] 	= settings
+        ["GlobalSettings"]  = settings
     }
 }
 
@@ -104,18 +104,18 @@ local CoreSettings = {
 -------------------------
 
 local HT_90d64eeba8247d656ef6b4800ec0f52f = {
-    [0x31] 		= "31CEB6C0-888A-4CDB-ABD2-1980A1C455E1",
-    [0x32] 		= "E6493637-8F68-47DA-ACA4-FB604459A07C",
-    [0x33] 		= "28533C00-DEBB-44F3-91FA-14A088AEF4F0",
-    [0x34] 		= "728FAB66-2E30-421C-B3D5-746C5F95DA1A",
-    [0x35] 		= "61654309-F7AE-4666-9C92-5FB0E963C5E9",
-    [0x36] 		= "B20BE1FB-6490-4972-856F-A9ABEE8F0FA6",
-    [0x37] 		= "CAE1F5D2-600E-462E-8979-79A08C4574DE",
-    [0x38] 		= "42337869-8A7D-438F-8516-0BC4A5BC28A1",
-    [0x39] 		= "9BA1115F-FF64-4E78-8F41-7A28DF30293A",
-    [0x3130] 	= "521BABBC-70A3-4B35-B03C-A0BF54C8F10B",
-    [0x3131] 	= "4DBCD948-2755-4264-8ECA-65A81BFD35B8",
-    [0x3132] 	= "3E5B37FB-2041-4434-B0F3-9BFFBEA46CBC"
+    [0x31]      = "31CEB6C0-888A-4CDB-ABD2-1980A1C455E1",
+    [0x32]      = "E6493637-8F68-47DA-ACA4-FB604459A07C",
+    [0x33]      = "28533C00-DEBB-44F3-91FA-14A088AEF4F0",
+    [0x34]      = "728FAB66-2E30-421C-B3D5-746C5F95DA1A",
+    [0x35]      = "61654309-F7AE-4666-9C92-5FB0E963C5E9",
+    [0x36]      = "B20BE1FB-6490-4972-856F-A9ABEE8F0FA6",
+    [0x37]      = "CAE1F5D2-600E-462E-8979-79A08C4574DE",
+    [0x38]      = "42337869-8A7D-438F-8516-0BC4A5BC28A1",
+    [0x39]      = "9BA1115F-FF64-4E78-8F41-7A28DF30293A",
+    [0x3130]    = "521BABBC-70A3-4B35-B03C-A0BF54C8F10B",
+    [0x3131]    = "4DBCD948-2755-4264-8ECA-65A81BFD35B8",
+    [0x3132]    = "3E5B37FB-2041-4434-B0F3-9BFFBEA46CBC"
 }
 
 local IDX_6a992d5529f459a44fee58c733255e86 = {
@@ -198,17 +198,17 @@ end
 
 local Key_e9a23cbc455158951716b440c3d165e0 = {
     __index     = {},
-    __newindex 	= {},
-    __call 	    = {},
+    __newindex  = {},
+    __call      = {},
     __concat    = {},
-    __unm 	    = {},
-    __add 	    = {},
-    __sub 	    = {},
-    __mul 	    = {},
-    __div 	    = {},
-    __mod 	    = {},
-    __pow 	    = {},
-    __tostring 	= {},
+    __unm       = {},
+    __add       = {},
+    __sub       = {},
+    __mul       = {},
+    __div       = {},
+    __mod       = {},
+    __pow       = {},
+    __tostring  = {},
     __metatable = {},
     __eq        = {},
     __lt        = {},
@@ -225,7 +225,7 @@ local Key_e9a23cbc455158951716b440c3d165e0 = {
 local workspace = game:GetService('Workspace') --> Disables any deprecation from Roblox's API.
 local pi        = math.pi
 local log       = math.log
-local log10	    = math.log10
+local log10     = math.log10
 local deg       = math.deg
 local rad       = math.rad
 local fmod      = math.fmod
@@ -239,7 +239,7 @@ local atan      = math.atan
 local atan2     = math.atan2
 local sinh      = math.sinh
 local cosh      = math.cosh
-local tanh 	    = math.tanh
+local tanh      = math.tanh
 local noise     = math.noise
 local random    = math.random
 local sqrt      = math.sqrt
@@ -307,17 +307,17 @@ end
 
 function lookAt(target, eye)
     local forwardVector = (target - eye).Unit
-    local upVector 		= Vector3.new(0, 1, 0)
-    local rightVector 	= forwardVector:Cross(upVector)
-    local upVector2 	= rightVector:Cross(forwardVector)
+    local upVector      = Vector3.new(0, 1, 0)
+    local rightVector   = forwardVector:Cross(upVector)
+    local upVector2     = rightVector:Cross(forwardVector)
     
     return CFrame.fromMatrix(eye, rightVector, upVector2)
 end
 
-Neck.MaxVelocity 			 = 1/3
+Neck.MaxVelocity             = 1/3
 Player.CameraMinZoomDistance = -math.huge
 Player.CameraMaxZoomDistance = -math.huge
-Player.CameraMode			 = Enum.CameraMode.LockFirstPerson
+Player.CameraMode            = Enum.CameraMode.LockFirstPerson
 
 RunService.RenderStepped:Connect(function(step)
     local CameraCF = Camera.CoordinateFrame
@@ -331,8 +331,8 @@ RunService.RenderStepped:Connect(function(step)
                 local Point      = PlayerMouse.Hit.p
                 local Distance   = (Head.CFrame.p - Point).Magnitude
                 local Difference = (Head.CFrame.Y - Point.Y)
-                local aOffset 	 = -1.12 --> Positive integer will invert the X and Y axis movement scheme.
-                local Angle 	 = -(math.atan(Difference / Distance) * aOffset)
+                local aOffset    = -1.12 --> Positive integer will invert the X and Y axis movement scheme.
+                local Angle      = -(math.atan(Difference / Distance) * aOffset)
                 
                 ----------------------------------
                 ------| Y-Axis Angle Chart |------
@@ -367,7 +367,7 @@ WeldA.Part0     = Head
 WeldA.Part1     = Handle
 
 local RightArmM = ViewModel:FindFirstChild('RightArm', true)
-local LeftArmM 	= ViewModel:FindFirstChild('LeftArm', true)
+local LeftArmM  = ViewModel:FindFirstChild('LeftArm', true)
 local LeftArm   = LeftArmM.Arm
 local RightArm  = RightArmM.Arm
 
