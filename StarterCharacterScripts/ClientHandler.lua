@@ -291,7 +291,7 @@ local NeckOriginC0                 = Neck.C0
 local nOffsetX, nOffsetY, nOffsetZ = Neck.C0.X, Neck.C0.Y, Neck.C0.Z --> Might be useless for now, but can be implemented later.
 
 local ActionEnabled = false
-local ActionBound	= InputModule.GetActionHandlerTypes()[3]
+local ActionBound   = InputModule.GetActionHandlerTypes()[3]
 
 repeat wait() until ContentProvider.RequestQueueSize <= 2
 
