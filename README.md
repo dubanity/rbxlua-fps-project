@@ -165,7 +165,7 @@ Here is a [link](https://www.roblox.com/games/9484903668) to a demo game in whic
 provide a better version excluding the usage of the depreacted raycast system, has a
 more performant style, and does not obfuscate everything so it is more readable.
 
-# Credits
+### Credits
 Here is a list of people that have helped contribute ideas to this project along the way:
 * Uctron for some fun hidden API functions
 * CleverSource for the original head-follow-mouse method using R15
